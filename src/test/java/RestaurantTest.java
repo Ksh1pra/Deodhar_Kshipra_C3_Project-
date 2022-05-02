@@ -75,6 +75,16 @@ class RestaurantTest {
         assertThrows(itemNotFoundException.class,
                 ()->restaurant.removeFromMenu("French fries"));
     }
+    @Test
+    public void display_total_order_value_of_selected_items() {
+        List<Item> selectedItems=new ArrayList<Item>();
+//
+        selectedItems.add(new Item("Paratha", 300));
+        selectedItems.add(new Item("Curd Rice", 300));
+        selectedItems.add(new Item("Dosa", 300));
+
+        assertEquals(900, restaurant.totalOrderValue(selectedItems));
+    }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 }

@@ -71,4 +71,7 @@ public class Restaurant {
         return name;
     }
 
+    public int totalOrderValue(List<Item> itemList) {
+
+    }
 }
