@@ -17,4 +17,8 @@ public class Item {
                 + "\n"
                 ;
     }
+    public int getPrice(Item item){
+        return item.price;
+    }
+
 }
